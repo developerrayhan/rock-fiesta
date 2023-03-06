@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cryptic Fate</title>
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="dist/styles/style.css" />
+        <!-- FontAwesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header
+            class="sticky top-0 z-30 w-full bg-gray-900/80 backdrop-blur-sm shadow-gray-600/5 border-b border-gray-800 shadow-none py-3"
+        >
+            <nav class="flex justify-between items-center mx-auto w-11/12">
+                <div>
+                    <a href="" class="text-rose-600 font-semibold text-2xl">Rock Fiesta</a>
+                </div>
+                <div
+                    class="nav-links duration-500 absolute bg-gray-800 top-20 left-0 w-full md:relative md:bg-transparent md:top-0 md:w-auto md:flex md:justify-center md:items-center md:gap-6 md:py-0 px-6 py-6 hidden"
+                >
+                    <ul class="flex md:flex-row flex-col md:items-center md:gap-6 gap-8">
+                        <li>
+                            <a class="font-normal hover:text-rose-500 text-white" href="#">Home</a>
+                        </li>
+                        <li>
+                            <a class="font-normal hover:text-rose-500 text-white" href="#">Pricing</a>
+                        </li>
+                        <li>
+                            <a class="font-normal hover:text-rose-500 text-white" href="#">Event</a>
+                        </li>
+                        <li>
+                            <a class="font-normal hover:text-rose-500 text-white" href="#">Resources</a>
+                        </li>
+                        <li>
+                            <a class="font-normal hover:text-rose-500 text-white" href="#">Helpdesk</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-6">
+                    <button class="bg-rose-600 text-white px-5 py-2 rounded-full hover:rose-700">Login</button>
+                    <button class="bg-rose-600 text-white px-5 py-2 rounded-full hover:rose-700">Register</button>
+                    <ion-icon
+                        id="toggle-btn"
+                        name="menu"
+                        class="text-3xl text-white cursor-pointer md:hidden"
+                    ></ion-icon>
+                </div>
+            </nav>
+        </header>
+        <!-- Main -->
+        <main>
+            <!-- Hero -->
+            <section class="relative bg-[url(/src/assets/hero-pattern.png)] bg-cover bg-center bg-no-repeat">
+                <div
+                    class="absolute inset-0 bg-gray-900/80 sm:bg-transparent sm:bg-gradient-to-r sm:from-gray-900/95 sm:to-gray-700/0"
+                ></div>
+
+                <div
+                    class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:justify-center lg:h-screen lg:items-center lg:px-8"
+                >
+                    <div class="max-w-xl text-center sm:text-center">
+                        <p class="text-white text-center font-normal text-xl mb-2">Welcome to our ticketing website!</p>
+                        <h1 class="text-3xl font-extrabold sm:text-5xl text-white">
+                            Where Your Event
+                            <strong class="block font-extrabold text-rose-700"> Dreams Come to Life!</strong>
+                        </h1>
+
+                        <p class="mt-4 max-w-lg sm:text-base sm:leading-relaxed text-white">
+                            Not only can you purchase tickets to the hottest events in town, but you can also create
+                            your own custom tickets with our easy-to-use platform. Say goodbye to generic tickets and
+                            hello to personalized and professional-looking ones that will make your event stand out from
+                            the rest.
+                        </p>
+
+                        <div class="mt-8 flex justify-center flex-wrap gap-4 text-center">
+                            <a
+                                href="#"
+                                class="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+                            >
+                                Buy Tickets
+                            </a>
+
+                            <a
+                                href="#"
+                                class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+                            >
+                                Upcoming Events
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About -->
+            <section class="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-gray-900/80 backdrop-blur-sm shadow-gray-600/5">
+                <div class="container w-10/12 mx-auto">
+                    <div class="-mx-4 flex flex-wrap items-center justify-between">
+                        <div class="w-full px-4 lg:w-6/12">
+                            <div class="-mx-3 flex items-center sm:-mx-4">
+                                <div class="w-full px-3 sm:px-4 xl:w-1/2">
+                                    <div class="py-3 sm:py-4">
+                                        <img
+                                            src="https://cdn.tailgrids.com/2.0/image/marketing/images/about/about-01/image-1.jpg"
+                                            alt=""
+                                            class="w-full rounded-2xl"
+                                        />
+                                    </div>
+                                    <div class="py-3 sm:py-4">
+                                        <img
+                                            src="https://cdn.tailgrids.com/2.0/image/marketing/images/about/about-01/image-2.jpg"
+                                            alt=""
+                                            class="w-full rounded-2xl"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="w-full px-3 sm:px-4 xl:w-1/2">
+                                    <div class="relative z-10 my-4">
+                                        <img
+                                            src="https://cdn.tailgrids.com/2.0/image/marketing/images/about/about-01/image-3.jpg"
+                                            alt=""
+                                            class="w-full rounded-2xl"
+                                        />
+                                        <span class="absolute -right-7 -bottom-7 z-[-1]">
+                                            <svg
+                                                width="134"
+                                                height="106"
+                                                viewBox="0 0 134 106"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+
+                                            >
+                                                <circle
+                                                    cx="1.66667"
+                                                    cy="104"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 1.66667 104)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="16.3333"
+                                                    cy="104"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 16.3333 104)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="31"
+                                                    cy="104"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 31 104)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="45.6667"
+                                                    cy="104"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 45.6667 104)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="60.3334"
+                                                    cy="104"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 60.3334 104)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="88.6667"
+                                                    cy="104"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 88.6667 104)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="117.667"
+                                                    cy="104"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 117.667 104)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="74.6667"
+                                                    cy="104"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 74.6667 104)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="103"
+                                                    cy="104"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 103 104)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="132"
+                                                    cy="104"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 132 104)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="1.66667"
+                                                    cy="89.3333"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 1.66667 89.3333)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="16.3333"
+                                                    cy="89.3333"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 16.3333 89.3333)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="31"
+                                                    cy="89.3333"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 31 89.3333)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="45.6667"
+                                                    cy="89.3333"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 45.6667 89.3333)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="60.3333"
+                                                    cy="89.3338"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 60.3333 89.3338)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="88.6667"
+                                                    cy="89.3338"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 88.6667 89.3338)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="117.667"
+                                                    cy="89.3338"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 117.667 89.3338)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="74.6667"
+                                                    cy="89.3338"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 74.6667 89.3338)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="103"
+                                                    cy="89.3338"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 103 89.3338)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="132"
+                                                    cy="89.3338"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 132 89.3338)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="1.66667"
+                                                    cy="74.6673"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 1.66667 74.6673)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="1.66667"
+                                                    cy="31.0003"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 1.66667 31.0003)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="16.3333"
+                                                    cy="74.6668"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 16.3333 74.6668)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="16.3333"
+                                                    cy="31.0003"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 16.3333 31.0003)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="31"
+                                                    cy="74.6668"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 31 74.6668)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="31"
+                                                    cy="31.0003"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 31 31.0003)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="45.6667"
+                                                    cy="74.6668"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 45.6667 74.6668)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="45.6667"
+                                                    cy="31.0003"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 45.6667 31.0003)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="60.3333"
+                                                    cy="74.6668"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 60.3333 74.6668)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="60.3333"
+                                                    cy="30.9998"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 60.3333 30.9998)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="88.6667"
+                                                    cy="74.6668"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 88.6667 74.6668)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="88.6667"
+                                                    cy="30.9998"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 88.6667 30.9998)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="117.667"
+                                                    cy="74.6668"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 117.667 74.6668)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="117.667"
+                                                    cy="30.9998"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 117.667 30.9998)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="74.6667"
+                                                    cy="74.6668"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 74.6667 74.6668)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="74.6667"
+                                                    cy="30.9998"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 74.6667 30.9998)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="103"
+                                                    cy="74.6668"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 103 74.6668)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="103"
+                                                    cy="30.9998"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 103 30.9998)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="132"
+                                                    cy="74.6668"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 132 74.6668)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="132"
+                                                    cy="30.9998"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 132 30.9998)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="1.66667"
+                                                    cy="60.0003"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 1.66667 60.0003)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="1.66667"
+                                                    cy="16.3333"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 1.66667 16.3333)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="16.3333"
+                                                    cy="60.0003"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 16.3333 60.0003)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="16.3333"
+                                                    cy="16.3333"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 16.3333 16.3333)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="31"
+                                                    cy="60.0003"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 31 60.0003)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="31"
+                                                    cy="16.3333"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 31 16.3333)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="45.6667"
+                                                    cy="60.0003"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 45.6667 60.0003)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="45.6667"
+                                                    cy="16.3333"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 45.6667 16.3333)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="60.3333"
+                                                    cy="60.0003"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 60.3333 60.0003)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="60.3333"
+                                                    cy="16.3333"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 60.3333 16.3333)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="88.6667"
+                                                    cy="60.0003"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 88.6667 60.0003)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="88.6667"
+                                                    cy="16.3333"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 88.6667 16.3333)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="117.667"
+                                                    cy="60.0003"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 117.667 60.0003)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="117.667"
+                                                    cy="16.3333"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 117.667 16.3333)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="74.6667"
+                                                    cy="60.0003"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 74.6667 60.0003)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="74.6667"
+                                                    cy="16.3333"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 74.6667 16.3333)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="103"
+                                                    cy="60.0003"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 103 60.0003)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="103"
+                                                    cy="16.3333"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 103 16.3333)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="132"
+                                                    cy="60.0003"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 132 60.0003)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="132"
+                                                    cy="16.3333"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 132 16.3333)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="1.66667"
+                                                    cy="45.3333"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 1.66667 45.3333)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="1.66667"
+                                                    cy="1.66683"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 1.66667 1.66683)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="16.3333"
+                                                    cy="45.3333"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 16.3333 45.3333)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="16.3333"
+                                                    cy="1.66683"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 16.3333 1.66683)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="31"
+                                                    cy="45.3333"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 31 45.3333)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="31"
+                                                    cy="1.66683"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 31 1.66683)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="45.6667"
+                                                    cy="45.3333"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 45.6667 45.3333)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="45.6667"
+                                                    cy="1.66683"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 45.6667 1.66683)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="60.3333"
+                                                    cy="45.3338"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 60.3333 45.3338)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="60.3333"
+                                                    cy="1.66683"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 60.3333 1.66683)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="88.6667"
+                                                    cy="45.3338"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 88.6667 45.3338)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="88.6667"
+                                                    cy="1.66683"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 88.6667 1.66683)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="117.667"
+                                                    cy="45.3338"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 117.667 45.3338)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="117.667"
+                                                    cy="1.66683"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 117.667 1.66683)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="74.6667"
+                                                    cy="45.3338"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 74.6667 45.3338)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="74.6667"
+                                                    cy="1.66683"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 74.6667 1.66683)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="103"
+                                                    cy="45.3338"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 103 45.3338)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="103"
+                                                    cy="1.66683"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 103 1.66683)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="132"
+                                                    cy="45.3338"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 132 45.3338)"
+                                                    fill="#E11D48"
+                                                />
+                                                <circle
+                                                    cx="132"
+                                                    cy="1.66683"
+                                                    r="1.66667"
+                                                    transform="rotate(-90 132 1.66683)"
+                                                    fill="#E11D48"
+                                                />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
+                            <div class="mt-10 lg:mt-0">
+                                <span class="text-primary mb-2 block text-lg font-semibold text-rose-600"> About Us </span>
+                                <h2 class="text-dark mb-4 text-xl font-bold sm:text-2xl text-rose-500">
+                                    Rock Fiesta is a Rock & Metal Fest Organizer that has been established since 2018.
+                                </h2>
+                                <p class="text-body-color mb-8 text-base text-white font-light">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat sapiente dolores iure nobis aliquid voluptatem magni doloribus optio rem accusamus commodi doloremque quisquam animi, reiciendis ullam deserunt earum nam modi?.
+                                </p>
+                                <a
+                                    href="javascript:void(0)"
+                                    class="rounded bg-rose-600 px-8 py-4 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+                                >
+                                    Get Started
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Javascript -->
+        <script src="src/js/app.js"></script>
+    </body>
+</html>
