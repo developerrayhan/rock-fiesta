@@ -4,6 +4,9 @@ const toggleBTn = document.querySelector("#toggle-btn");
 toggleBTn.addEventListener("click", () => {
     toggleBTn.name = toggleBTn.name === "menu" ? "close" : "menu";
     navLinks.classList.toggle("hidden");
+    if (navLinks.classList.contains("hidden")) {
+        navLinks.classList.add("top-16");
+    }
 });
 
 const targetDate = new Date("2024-5-21 23:59:59");
