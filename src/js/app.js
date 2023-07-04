@@ -6,7 +6,7 @@ toggleBTn.addEventListener("click", () => {
     navLinks.classList.toggle("hidden");
 });
 
-const targetDate = new Date("2023-5-21 23:59:59");
+const targetDate = new Date("2024-5-21 23:59:59");
 let timeLeft = getTimeLeft(targetDate);
 
 function getTimeLeft(targetDate) {
